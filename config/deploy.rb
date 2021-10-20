@@ -8,8 +8,8 @@ set :repo_url, 'git@github.com:viveks-7070/new_aws_prod.git'
 set :deploy_to, '/home/deploy/aws-rails'
 set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
-# set :linked_files, %w{config/database.yml config/master.key}
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/master.key}
+# set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 set :keep_releases, 3
